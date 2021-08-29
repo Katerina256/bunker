@@ -2,11 +2,11 @@ import 'dart:io';
 
 import 'package:animations/animations.dart';
 import 'package:bunker/player.dart';
+import 'package:bunker/qr.dart';
 import 'package:bunker/storage.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:kplayer/kplayer.dart';
-import 'package:qr_code_scanner/qr_code_scanner.dart';
 
 import 'data.dart';
 
@@ -74,6 +74,13 @@ class PageHome extends StatelessWidget {
           );
         }).toList(),
       )),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.qr_code_scanner),
+        onPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => PageQR()));
+        },
+      ),
     );
   }
 }
