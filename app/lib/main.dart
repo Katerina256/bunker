@@ -74,13 +74,19 @@ class PageHome extends StatelessWidget {
           );
         }).toList(),
       )),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.qr_code_scanner),
-        onPressed: () {
-          Navigator.of(context)
-              .push(MaterialPageRoute(builder: (context) => PageQR()));
-        },
-      ),
+      floatingActionButton: Platform.isAndroid
+          ? FloatingActionButton(
+              backgroundColor: Colors.amber,
+              child: Icon(
+                Icons.qr_code_scanner,
+                color: Colors.black,
+              ),
+              onPressed: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) => PageQR()));
+              },
+            )
+          : null,
     );
   }
 }

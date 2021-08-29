@@ -45,6 +45,29 @@ class BunkerData {
         '20', 'Власть алгоритмов', 'assets/audio/20.mp3', '01:12'),
   };
 
+  static final qData = {
+    'https://bit.do/bnk04': '01',
+    'https://bit.do/bnk05': '02',
+    'https://bit.do/bnk01': '03',
+    'https://bit.do/bnk02': '04',
+    'https://bit.do/bnk018': '05',
+    'https://bit.do/bnk03': '06',
+    'https://bit.do/bnk015': '07',
+    'https://bit.do/bnk09': '08',
+    'https://bit.do/bnk011': '09',
+    'https://bit.do/bnk017': '10',
+    'https://bit.do/bnk013': '11',
+    'https://bit.do/bnk014': '12',
+    'https://bit.do/bnk06': '13',
+    'https://bit.do/bnk016': '14',
+    'https://bit.do/bnk07': '15',
+    'https://bit.do/bnk08': '16',
+    'https://bit.do/bnk012': '17',
+    'https://bit.do/bnk019': '18',
+    'https://bit.do/bnk020': '19',
+    'https://bit.do/bnk010': '20',
+  };
+
   static final eList = [
     '01',
     '02',
