@@ -6,10 +6,8 @@ import 'dart:typed_data';
 import 'package:camera/camera.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:qrscan/qrscan.dart' as scanner;
 import 'package:image/image.dart';
-import 'package:image/image.dart' as imgLib;
 
 class PageQR extends StatefulWidget {
   const PageQR({Key? key}) : super(key: key);
