@@ -24,7 +24,7 @@ class _PagePlayerState extends State<PagePlayer> {
   dispose() {
     super.dispose();
     player.stop();
-    player.dispose();
+    // player.dispose();
   }
 
   bool _changingPosition = false;
